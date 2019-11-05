@@ -28,6 +28,7 @@ function init() {
   
   function render() {
     result.textContent = answer;
+
     // result.style.color = sum >= 0 ? 'green' : 'red';
   }
   
