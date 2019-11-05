@@ -1,4 +1,5 @@
 //------variables
+var one = 1;
 var answer;
 
 //-------constraints(app states)
@@ -7,21 +8,21 @@ var answer;
 //-------cached elements 
 var getInput = document.getElementById('numIp');
 var result = document.querySelector('h1');
-var numInput = parseFloat(getInput.value);
+// var numInput = parseFloat(getInput.value);
 //--------event listeners
 document.getElementById('plus').addEventListener('click', function() {
- answer = numInput + 1;
+ answer = (parseFloat(getInput.value) + one);
 console.log(answer);
  render();
 })
 document.getElementById('minus').addEventListener('click', function() {
-  answer =  numInput - 1;
+  answer = '-' + (parseFloat(getInput.value) - one);
     console.log(answer);
     render();
 })
 //-------- functions 
 function init() {
-    return answer;
+     answer = 0;
     render();
   }
   
